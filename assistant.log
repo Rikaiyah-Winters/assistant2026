@@ -1,0 +1,3 @@
+INFO:httpx2:HTTP Request: POST https://api.openai.com/v1/conversations "HTTP/1.1 200 OK"
+INFO:httpx2:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+INFO:httpx2:HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
