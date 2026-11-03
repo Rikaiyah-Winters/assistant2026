@@ -7,6 +7,13 @@ log = logging.getLogger("assistant")
 logging.basicConfig(filename="assistant.log", level=logging.INFO)
 client = OpenAI()
 
+# curriculum_knowledge = client.files.create(
+#     file = open("knowledge/OpenAIChatCompletionsAPICheatsheet.pdf", "rb"),
+#     purpose = "user_data"
+# )
+
+# print(curriculum_knowledge)
+
 model="gpt-4o-mini"
 instructions="You are a study partner for student who has an intermediate knowledge of technology. When you answer prompts, do so with intermediate language suitable for someone learning intermediate concepts."
 phrases = ["Thinking", "Pondering", "Dotting the i's", "Achieving world peace"]
@@ -48,5 +55,5 @@ while True:
     status, message = get_reply(conversation.id, user_input)
     print("\nAssistant: " + message + "\n")
 
-#may for the first input, make sure that the model knows that i am inserting my name because when I typed it in, it asked me "It looks like you mentioned "Rikaiyah." Could you clarify what you▒d like to know about it? Are you referring to a person, a concept, or something else? Let me know how I can help you!"
-#instead of immediately recognizing it as my name like in lessons past
+# #may for the first input, make sure that the model knows that i am inserting my name because when I typed it in, it asked me "It looks like you mentioned "Rikaiyah." Could you clarify what you▒d like to know about it? Are you referring to a person, a concept, or something else? Let me know how I can help you!"
+# #instead of immediately recognizing it as my name like in lessons past
